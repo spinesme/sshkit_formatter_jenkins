@@ -7,7 +7,7 @@ SSHKit friendly formatter for our Jenkins
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sshkit_formatter_jenkins'
+gem 'sshkit_formatter_jenkins', git: 'https://github.com/spinesme/sshkit_formatter_jenkins', require: false
 ```
 
 And then execute:
