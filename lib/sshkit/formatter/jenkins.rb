@@ -1,3 +1,5 @@
+require 'sshkit'
+
 module SSHKit
   module Formatter
     class Jenkins < Abstract
