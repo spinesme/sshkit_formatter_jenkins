@@ -1,6 +1,6 @@
 # SSHKitFormatterJenkins
 
-SSHKit formatter for our Jenkins
+SSHKit friendly formatter for our Jenkins
 
 ## Installation
 
@@ -20,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require in `Capfile`:
+
+```ruby
+require 'sshkit_formatter_jenkins'
+```
+
+Change to Jenkins output formatter globally(`config/deploy.rb`) or by stage (i.e. `config/deploy/production.rb`):
+
+```ruby
+set :format, :jenkins
+```
 
 ## Development
 
@@ -30,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sshkit_formatter_jenkins. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/spinesme/sshkit_formatter_jenkins. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
