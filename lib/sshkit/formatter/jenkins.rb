@@ -45,8 +45,8 @@ module SSHKit
           end
 
           if command.finished?
-            original_output << "%6s %s\n" % [level(command.verbosity),
-                                             uuid(command) + "aaaaFinished in #{sprintf('%5.3f seconds', command.runtime)} with exit status #{command.exit_status} (#{c.bold { command.failure? ? c.red('failed') : c.green('successful') }})."]
+            original_output << "%6s %s\n" % [level(Logger::DEBUG),
+                                             uuid(command) + "Finished in #{sprintf('%5.3f seconds', command.runtime)} with exit status #{command.exit_status} (#{c.bold { command.failure? ? c.red('failed') : c.green('successful') }})."]
           end
         end
 
